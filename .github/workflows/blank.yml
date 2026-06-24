@@ -7,10 +7,8 @@ jobs:
       - name: Copying files
         uses: actions/checkout@v7
       - name: Hello world
-        run: echo "first github ACTion"
-      - name: Hello world
-        run: echo "hello"
-      - name: Listing files
-        run: ls
-      - name: read dockerfile
-        run: cat dockerfile
+        run: |
+         echo "first github ACTion"
+         echo "hello"
+         ls
+         cat dockerfile
