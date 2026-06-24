@@ -4,6 +4,8 @@ jobs:
   first_job:
     runs-on: ubuntu-22.04
     steps:
+      - name: Copying files
+        uses: actions/checkout@v7
       - name: Hello world
         run: echo "first github ACTion"
       - name: Hello world
